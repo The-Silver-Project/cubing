@@ -1,9 +1,9 @@
 # cubing
 
 ## To deploy to github pages site
-Run `yarn build`
-Commit changes to master
-Run `yarn deploy`
+- Run `yarn build`
+- Commit changes to master
+- Run `yarn deploy`
 
 ## Project setup
 ```
