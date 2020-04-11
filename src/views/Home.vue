@@ -42,7 +42,7 @@ export default {
   height: 100%;
   flex-grow: 1;
   flex-basis: 0;
-  border-right: 1px solid rgba(0, 0, 0, .05);
+  border-right: 1px solid rgba(0, 0, 0, .07);
 }
 .home-section:first-child {
   flex: 0 0 60px;
