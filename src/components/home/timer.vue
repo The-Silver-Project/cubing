@@ -1,3 +1,3 @@
 <template>
-  <div>Timer</div>
+  <div></div>
 </template>

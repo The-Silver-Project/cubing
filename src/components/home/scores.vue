@@ -1,3 +1,3 @@
 <template>
-  <div>Scores</div>
+  <div></div>
 </template>
