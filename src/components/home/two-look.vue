@@ -2,22 +2,27 @@
   <ui-container>
     <ui-h1>2 Look</ui-h1>
 
-    <ui-card>This is a card.</ui-card>
+    <oll-unit
+      :tf="['TL', 'TM', 'TR', 'ML', 'MM', 'MR', 'BM']"
+      :sf="['BL', 'BR']"
+      :text="['FURF\'', 'RUR']"
+    />
   </ui-container>
 </template>
 
 <script>
 import {
-  UiCard,
   UiContainer,
   UiH1,
 } from '../../ui';
+
+import OllUnit from './oll-unit.vue';
 
 export default {
   name: 'TwoLook',
 
   components: {
-    UiCard,
+    OllUnit,
     UiContainer,
     UiH1,
   },
