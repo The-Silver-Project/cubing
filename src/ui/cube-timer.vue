@@ -5,10 +5,7 @@
 </template>
 
 <script>
-/* eslint-disable prefer-template */
-function padZero(n) {
-  return n >= 10 ? `${n}` : '0' + n;
-}
+import { getTimestring } from '../utils/common';
 
 let interval;
 
@@ -73,8 +70,8 @@ export default {
         this.start();
         this.timerState = STATE.RUN;
       } else {
+        if (this.timerState === STATE.STOP) this.onStop();
         this.timerState = STATE.IDLE;
-        this.$bus.$emit('scramble');
       }
     },
 
@@ -90,20 +87,16 @@ export default {
       if (interval) clearInterval(interval);
       interval = null;
     },
+
+    onStop() {
+      this.$store.commit('solveTime', this.timeElapsed);
+      this.$bus.$emit('timer-stop');
+    },
   },
 
   computed: {
     timestring() {
-      let time = Math.floor(this.timeElapsed / 10);
-      const ms = time - 100 * Math.floor(time / 100); time = Math.floor(time / 100);
-      const s = time - 60 * Math.floor(time / 60); time = Math.floor(time / 60);
-      const m = time - 60 * Math.floor(time / 60); time = Math.floor(time / 60);
-      const h = time;
-
-      return (h ? padZero(h) + ':' : '')
-          + (m ? padZero(m) + ':' : '')
-          + padZero(s) + ':'
-          + padZero(ms);
+      return getTimestring(this.timeElapsed);
     },
 
     timerClass() {
