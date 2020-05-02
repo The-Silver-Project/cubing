@@ -1,8 +1,10 @@
 <template>
-  <section>
-    <ui-container>
-      <ui-h1>OLL</ui-h1>
+  <section class="wrap custom-scroll">
+    <ui-container class="heading-wrap">
+      <ui-h1 class="heading">OLL</ui-h1>
+    </ui-container>
 
+    <ui-container>
       <oll-unit
         v-for="oll in this.olls"
         :key="oll.name"
@@ -41,10 +43,24 @@ export default {
 </script>
 
 <style scoped>
-.oll-unit {
+.wrap {
+  overflow: auto;
+  height: 100%;
+}
+
+.heading-wrap {
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+  padding: 6px 15px;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
-.oll-unit:last-child {
-  margin-bottom: 0;
+.heading {
+  margin: 0;
+}
+
+.oll-unit {
+  margin-bottom: 12px;
 }
 </style>
