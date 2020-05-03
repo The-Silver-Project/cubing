@@ -109,7 +109,7 @@ export default {
 
     {
       name: 'S2 - OLL 6',
-      tf: ['MM', 'MR', 'BM', 'BR'],
+      tf: ['MM', 'MR', 'TM', 'TR'],
       sf: ['LT', 'LM', 'BL', 'BM', 'RB'],
       chance: 54,
       algorithms: [
