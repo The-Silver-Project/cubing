@@ -11,6 +11,6 @@ h2 {
   margin-top: 21px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, .6);
+  color: rgb(0, 88, 181);
 }
 </style>
