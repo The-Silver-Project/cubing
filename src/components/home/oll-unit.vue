@@ -5,7 +5,6 @@
         class="oll-figure"
         :tf=tf
         :sf=sf
-        :text=text
       />
 
       <div>
