@@ -1,22 +1,19 @@
 <template>
-  <ui-card>
-    <ui-columns justify="flex-start" align="flex-start">
-      <pll-figure
-        class="pll-figure"
-        :markers="markers"
-        :arrows="arrows"
-      />
+  <ui-columns justify="flex-start" align="flex-start">
+    <pll-figure
+      class="pll-figure"
+      :markers="markers"
+      :arrows="arrows"
+    />
 
-      <div>
-        <algorithm :text=text />
-      </div>
-    </ui-columns>
-  </ui-card>
+    <div>
+      <algorithm :text=text />
+    </div>
+  </ui-columns>
 </template>
 
 <script>
 import {
-  UiCard,
   UiColumns,
 } from '../../ui';
 
@@ -29,7 +26,6 @@ export default {
   components: {
     Algorithm,
     PllFigure,
-    UiCard,
     UiColumns,
   },
 

@@ -1,22 +1,19 @@
 <template>
-  <ui-card>
-    <ui-columns justify="flex-start" align="flex-start">
-      <oll-figure
-        class="oll-figure"
-        :tf=tf
-        :sf=sf
-      />
+  <ui-columns justify="flex-start" align="flex-start">
+    <oll-figure
+      class="oll-figure"
+      :tf=tf
+      :sf=sf
+    />
 
-      <div>
-        <algorithm :text=text />
-      </div>
-    </ui-columns>
-  </ui-card>
+    <div>
+      <algorithm :text=text />
+    </div>
+  </ui-columns>
 </template>
 
 <script>
 import {
-  UiCard,
   UiColumns,
 } from '../../ui';
 
@@ -29,7 +26,6 @@ export default {
   components: {
     Algorithm,
     OllFigure,
-    UiCard,
     UiColumns,
   },
 

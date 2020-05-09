@@ -127,6 +127,6 @@ export default {
 }
 
 .oll-unit {
-  margin-bottom: 12px;
+  margin-bottom: 36px;
 }
 </style>
