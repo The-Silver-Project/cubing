@@ -29,12 +29,6 @@ export default {
   },
 
   methods: {
-    getCubeTopFaceParams(str) {
-      if (str === 'TL') return '00';
-      if (str === 'TM') return '01';
-      return null;
-    },
-
     drawCubeTopFace(ctx) {
       ['L', 'M', 'R'].forEach((iLetter, i) => {
         ['T', 'M', 'B'].forEach((jLetter, j) => {
