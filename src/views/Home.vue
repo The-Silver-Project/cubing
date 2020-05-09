@@ -1,7 +1,6 @@
 <template>
   <section class="home-layout">
     <div class="home-section"><app-bar /></div>
-    <div class="home-section"><two-look /></div>
     <div class="home-section"><oll /></div>
     <div class="home-section"><pll /></div>
     <div class="home-section"><timer /></div>
@@ -11,7 +10,6 @@
 
 <script>
 import AppBar from '../components/home/app-bar.vue';
-import TwoLook from '../components/home/two-look.vue';
 import Oll from '../components/home/oll.vue';
 import Pll from '../components/home/pll.vue';
 import Timer from '../components/home/timer.vue';
@@ -22,7 +20,6 @@ export default {
 
   components: {
     AppBar,
-    TwoLook,
     Oll,
     Pll,
     Timer,

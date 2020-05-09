@@ -599,4 +599,234 @@ export default {
       ],
     },
   ],
+
+  pll: [
+    {
+      name: 'Ub Perm',
+      sf: 'BBBOGOGRGROR',
+      arrows: [['LMRM', 'RMMM'], ['RMLB', 'MBMM'], ['MBLT', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ['R2U', "RUR'U'", "R'U'", "R'UR'"],
+        ['y2', "R'UR'U'", "R'U'", "R'URU", "R2'"],
+      ],
+    },
+
+    {
+      name: 'Ua Perm',
+      sf: 'BBBOROGOGRGR',
+      arrows: [['RMLM', 'LMMM'], ['LMRB', 'MBMM'], ['MBRT', 'RMMM']],
+      chance: 18,
+      algorithms: [
+        ["RU'RU", 'RU', "RU'R'U'", 'R2'],
+        ['y2', "RUR'U", "R'U'R2U'", "R'UR'UR[U2]"],
+        ['y2', "R2U'R'U'", 'RURU', "RU'R"],
+      ],
+    },
+
+    {
+      name: 'Z Perm',
+      sf: 'BRBOGOGOGRBR',
+      arrows: [['LMMM', 'MTMM'], ['MTMM', 'LMMM'], ['MBMM', 'RMMM'], ['RMMM', 'MBMM']],
+      chance: 36,
+      algorithms: [
+        ["M2'UM2'U", "M'U2", "M2'U2M'", '[U2]'],
+        ["y'M'U", "M2'UM2'", 'U', "M'U2M2", "[U']"],
+      ],
+    },
+
+    {
+      name: 'H Perm',
+      sf: 'OROGBGRORBGB',
+      arrows: [['MTMM', 'MBMM'], ['MBMM', 'MTMM'], ['LMMM', 'RMMM'], ['RMMM', 'LMMM']],
+      chance: 72,
+      algorithms: [
+        ["M2'UM2'", 'U2', "M2'UM2'"],
+      ],
+    },
+
+    {
+      name: 'Aa Perm',
+      sf: 'GOGRGBORRBBO',
+      arrows: [['LTRM', 'RTMM'], ['RTMB', 'RBMM'], ['RBLT', 'LTMM']],
+      chance: 18,
+      algorithms: [
+        ['x', "R'UR'", 'D2', "RU'R'", "D2R2x'"],
+        ["yx'R2D2", "R'U'R", 'D2', "R'UR'", 'x'],
+      ],
+    },
+
+    {
+      name: 'Ab Perm',
+      sf: 'ROBOGOGRRBBG',
+      arrows: [['RTLM', 'LTMM'], ['LTRB', 'RBMM'], ['RBMT', 'RTMM']],
+      chance: 18,
+      algorithms: [
+        ["xR2'D2", "RUR'", 'D2', "RU'R", "x'"],
+        ["yx'", "RU'R", 'D2', "R'UR", "D2R2'x"],
+      ],
+    },
+
+    {
+      name: 'E Perm',
+      sf: 'BOGRGOGRBOBR',
+      arrows: [['LTMM', 'LBMM'], ['LBMM', 'LTMM'], ['RTMM', 'RBMM'], ['RBMM', 'RTMM']],
+      chance: 36,
+      algorithms: [
+        ["x'", "RU'R'D", "RUR'D'", "RUR'D", "RU'R'D'", 'x'],
+      ],
+    },
+
+    {
+      name: 'Ra Perm',
+      sf: 'BROGOBOGGRBR',
+      arrows: [['LMMM', 'MTMM'], ['MTMM', 'LMMM'], ['RTMM', 'RBMM'], ['RBMM', 'RTMM']],
+      chance: 18,
+      algorithms: [
+        ["RU'R'U'", 'RURD', "R'U'RD'", "R'U2R'", "[U']"],
+        ["y'", "LU2L'U2", "LF'", "L'U'LU", "LFL2'[U]"],
+        ["RUR'F'", "RU2'R'U2'", "R'FRU", "RU2'R'", "[U']"],
+      ],
+    },
+
+    {
+      name: 'Rb Perm',
+      sf: 'GOBORGRGRBBO',
+      arrows: [['LTMM', 'RTMM'], ['RTMM', 'LTMM'], ['MBMM', 'RMMM'], ['RMMM', 'MBMM']],
+      chance: 18,
+      algorithms: [
+        ["R'U2RU2'", "R'F", "RUR'U'", "R'F'R2[U']"],
+        ["R'U2R'D'", "RU'R'D", "RURU'", "R'U'R", "[U']"],
+      ],
+    },
+
+    {
+      name: 'Ja',
+      sf: 'ORRBOOGGGRBB',
+      arrows: [['LTMM', 'RTMM'], ['RTMM', 'LTMM'], ['LMMM', 'MTMM'], ['MTMM', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ["R'UL'U2", "RU'R'U2R", "L[U']"],
+        ["y'", "L'U'LF", "L'U'LU", "LF'L2'UL[U]"],
+      ],
+    },
+
+    {
+      name: 'Jb Perm',
+      sf: 'OOGRROGGRBBB',
+      arrows: [['RTMM', 'RBMM'], ['RBMM', 'RTMM'], ['MBMM', 'RMMM'], ['RMMM', 'MBMM']],
+      chance: 18,
+      algorithms: [
+        ["RUR'F'", "RUR'U'", "R'FR2U'R'[U']"],
+      ],
+    },
+
+    {
+      name: 'T Perm',
+      sf: 'OOGRBOGRRBGB',
+      arrows: [['RTMM', 'RBMM'], ['RBMM', 'RTMM'], ['LMMM', 'RMMM'], ['RMMM', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ["RUR'U'", "R'FR2U'", "R'U'", "RUR'F'"],
+      ],
+    },
+
+    {
+      name: 'F Perm',
+      sf: 'BGOGOBOBGRRR',
+      arrows: [['MTMM', 'MBMM'], ['MBMM', 'MTMM'], ['RTMM', 'RBMM'], ['RBMM', 'RTMM']],
+      chance: 18,
+      algorithms: [
+        ["R'U'F'", "RUR'U'", "R'FR2U'", "R'U'RU", "R'UR"],
+        ['y', "R'U2R'U'", 'y', "R'F'R2U'", "R'UR'F", "RU'F"],
+      ],
+    },
+
+    {
+      name: 'V Perm',
+      sf: 'RGOGOBORRBBG',
+      arrows: [['LTMM', 'RBMM'], ['RBMM', 'LTMM'], ['MTMM', 'RMMM'], ['RMMM', 'MTMM']],
+      chance: 18,
+      algorithms: [
+        ["R'UR'U'", 'y', "R'F'R2U'", "R'UR'F", 'RF'],
+      ],
+    },
+
+    {
+      name: 'Y Perm',
+      sf: 'RBOGGBORRBOG',
+      arrows: [['LTMM', 'RBMM'], ['RBMM', 'LTMM'], ['LMMM', 'MTMM'], ['MTMM', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ['F', "RU'R'U'", "RUR'F'", "RUR'U'", "R'FRF'"],
+      ],
+    },
+
+    {
+      name: 'Na Perm',
+      sf: 'OORBBGRROGGB',
+      arrows: [['LMMM', 'RMMM'], ['RMMM', 'LMMM'], ['LBMM', 'RTMM'], ['RTMM', 'LBMM']],
+      chance: 72,
+      algorithms: [
+        ["RUR'U", "RUR'F'", "RUR'U'", "R'FR2U'", "R'U2", "RU'R'"],
+        ['z', "UR'D", "R2U'RD'", "UR'D", "R2U'RD'", "[R']z'"],
+      ],
+    },
+
+    {
+      name: 'Nb Perm',
+      sf: 'ROOGBBORRBGG',
+      arrows: [['LMMM', 'RMMM'], ['RMMM', 'LMMM'], ['LTMM', 'RBMM'], ['RBMM', 'LTMM']],
+      chance: 72,
+      algorithms: [
+        ["R'URU'", "R'F'U'F", "RUR'F", "R'F'", "RU'R"],
+        ["R'UL'U2RU'L", "R'UL'U2RU'L", '[U]'],
+      ],
+    },
+
+    {
+      name: 'Ga Perm',
+      sf: 'GBRBOGRRBOGO',
+      arrows: [['LBLT', 'LTLM'], ['LTMT', 'RTMT'], ['RTMM', 'LBMM'], ['MTLB', 'LMMM'], ['LMRM', 'RMMM'], ['RMLT', 'MTMM']],
+      chance: 18,
+      algorithms: [
+        ['R2U', "R'UR'U'", "RU'R2", "DU'", "R'URD'", '[U]'],
+        ['R2u', "R'UR'U'", "Ru'R2y'", "R'UR"],
+      ],
+    },
+
+    {
+      name: 'Gb Perm',
+      sf: 'OROGORBBGRGB',
+      arrows: [['LTLM', 'LBLM'], ['LBMM', 'RTMM'], ['RTMT', 'LTMT'], ['LMRT', 'MTMM'], ['MTRB', 'RMMM'], ['RMLM', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ["F'U'F", "R2uR'U", "RU'Ru'", "R2'"],
+        ["y'R'U'yF", "R2uR'U", "RU'Ru'", "R2'"],
+        ["y'D", "R'U'RU", "D'", "R2UR'U", "RU'RU'", "R2'[U']"],
+      ],
+    },
+
+    {
+      name: 'Gc Perm',
+      sf: 'GRRBOGRGBOBO',
+      arrows: [['LTLM', 'LBLM'], ['LBMB', 'RBMB'], ['RBMM', 'LTMM'], ['LMRM', 'RMMM'], ['RMLB', 'MBMM'], ['MBLT', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ["R2U'", "RU'RU", "R'UR2D'", "URU'R'", "D[U']"],
+        ["y2R2'F2", "RU2'RU2'", "R'F", "RUR'U'", "R'FR2"],
+      ],
+    },
+
+    {
+      name: 'Gd Perm',
+      sf: 'GBRBGGROBORO',
+      arrows: [['LTMT', 'RTMT'], ['RTMM', 'LBMM'], ['LBLM', 'LTLM'], ['LMRB', 'MBMM'], ['MBMT', 'MTMM'], ['MTLB', 'LMMM']],
+      chance: 18,
+      algorithms: [
+        ["D'", "RUR'U'", 'D', "R2U'RU'", "R'UR'U", 'R2[U]'],
+        ["RUR'", "y'", "R2u'RU'", "R'UR'u", 'R2'],
+      ],
+    },
+  ],
 };
