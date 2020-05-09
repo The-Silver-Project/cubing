@@ -14,9 +14,7 @@
         <pll-unit
           v-for="pll in plls[type].units"
           :key="pll.name"
-          :markers="pll.sf"
-          :arrows="pll.arrows"
-          :text="pll.algorithms[0]"
+          :pll=pll
           class="pll-unit"
         />
       </div>

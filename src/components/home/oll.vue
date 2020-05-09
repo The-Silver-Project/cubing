@@ -14,9 +14,7 @@
         <oll-unit
           v-for="oll in olls[type].units"
           :key="oll.name"
-          :tf="oll.tf"
-          :sf="oll.sf"
-          :text="oll.algorithms[0]"
+          :oll="oll"
           class="oll-unit"
         />
       </div>

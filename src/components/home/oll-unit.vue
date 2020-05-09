@@ -2,12 +2,29 @@
   <ui-columns justify="flex-start" align="flex-start">
     <oll-figure
       class="oll-figure"
-      :tf=tf
-      :sf=sf
+      :tf=oll.tf
+      :sf=oll.sf
     />
 
-    <div>
-      <algorithm :text=text />
+    <div class="details">
+      <ui-columns justify="flex-start" align="flex-start" class="header-details">
+        <div>{{ oll.name }}</div>
+        <div
+          :class="{
+            chance: true,
+            [`chance-${oll.chance}`]: true
+          }"
+        >1 in {{ oll.chance }} chance</div>
+      </ui-columns>
+
+      <ol>
+        <li
+          v-for="(text, index) in oll.algorithms"
+          :key=index
+        >
+          <algorithm :text=text />
+        </li>
+      </ol>
     </div>
   </ui-columns>
 </template>
@@ -30,9 +47,7 @@ export default {
   },
 
   props: {
-    tf: { type: Array, required: true },
-    sf: { type: Array, required: true },
-    text: { type: Array, required: true },
+    oll: { type: Object, required: true },
   },
 };
 </script>
@@ -40,5 +55,36 @@ export default {
 <style scoped>
 .oll-figure {
   margin-right: 15px;
+}
+
+.header-details {
+  font-size: 9px;
+  font-weight: 700;
+  margin-top: 3px;
+  margin-bottom: 9px;
+  line-height: 1;
+}
+
+.chance {
+  color: rgb(52, 164, 183);
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+.chance-108 {
+  color: #af8816;
+}
+.chance-216 {
+  color: #d0528c;
+}
+
+ol {
+  margin: 0;
+  padding: 0 0 0 12px;
+  font-weight: 700;
+  font-size: 9px;
+}
+
+li {
+  margin-bottom: 3px;
 }
 </style>
