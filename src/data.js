@@ -154,7 +154,7 @@ export default {
       sf: ['TL', 'RM', 'RB', 'BM'],
       chance: 54,
       algorithms: [
-        "RUR'U", "RU'R'U'", "R'FRF'",
+        ["RUR'U", "RU'R'U'", "R'FRF'"],
       ],
     },
 
