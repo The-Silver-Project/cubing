@@ -29,15 +29,15 @@ div {
   margin-right: 9px;
   font-size: 12px;
   font-weight: 700;
-  color: rgb(94, 94, 94);
-  background-color: rgba(141, 141, 141, 0.11)
+  color: rgb(0, 115, 160);
+  border-top: 2px solid rgba(0, 115, 160, 0.7);
 }
 .RUR-U- {
   color: rgb(253, 56, 148);
-  background-color: rgba(253, 56, 148, 0.137);
+  border-top: 2px solid rgba(253, 56, 148, .7);
 }
 .R-FRF- {
-  color: rgb(59, 185, 0);
-  background-color: rgba(59, 185, 0, 0.13);
+  color: rgb(16, 165, 131);
+  border-top: 2px solid rgba(16, 165, 131, .7)
 }
 </style>
