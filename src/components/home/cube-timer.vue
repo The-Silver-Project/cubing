@@ -115,7 +115,7 @@ export default {
   font-size: 48px;
   line-height: 1;
   font-weight: 800;
-  color: #ff57bc;
+  color: rgb(253, 56, 148);
   position: absolute;
   bottom: 24px;
   right:15%;

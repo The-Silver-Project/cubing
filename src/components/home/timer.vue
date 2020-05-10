@@ -31,6 +31,6 @@ export default {
 
 <style scoped>
 .heading {
-  color: #ff57bc;
+  color: rgb(253, 56, 148);
 }
 </style>
