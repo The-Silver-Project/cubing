@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { getTimestring } from '../utils/common';
+import { getTimestring } from '../../utils/common';
 
 let interval;
 
@@ -101,7 +101,7 @@ export default {
 
     timerClass() {
       return {
-        'ui-stop-watch': true,
+        'stop-watch': true,
         red: this.timerState === STATE.HOLD || this.timerState === STATE.STOP,
         green: this.timerState === STATE.START,
       };
@@ -111,17 +111,22 @@ export default {
 </script>
 
 <style scoped>
-.ui-stop-watch {
-  margin-top: 30px;
-  font-size: 30px;
-  font-weight: bold;
+.stop-watch {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 800;
+  color: #ff57bc;
+  position: absolute;
+  bottom: 24px;
+  right:15%;
+  margin-bottom: 0;
 }
 
 .red {
-  color: #d60000;
+  color: #ff8265;
 }
 
 .green {
-  color: #1cbd00;
+  color: #4fff95;
 }
 </style>

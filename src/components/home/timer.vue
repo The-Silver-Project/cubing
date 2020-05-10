@@ -1,9 +1,9 @@
 <template>
   <section>
     <ui-container>
-      <ui-h1>Timer</ui-h1>
-      <ui-scramble-panel></ui-scramble-panel>
-      <ui-cube-timer></ui-cube-timer>
+      <ui-h1 class="heading">Timer</ui-h1>
+      <scramble-panel></scramble-panel>
+      <cube-timer></cube-timer>
     </ui-container>
   </section>
 </template>
@@ -12,18 +12,25 @@
 import {
   UiContainer,
   UiH1,
-  UiCubeTimer,
-  UiScramblePanel,
 } from '../../ui';
+
+import ScramblePanel from './scramble-panel.vue';
+import CubeTimer from './cube-timer.vue';
 
 export default {
   name: 'Timer',
 
   components: {
+    CubeTimer,
+    ScramblePanel,
     UiContainer,
     UiH1,
-    UiCubeTimer,
-    UiScramblePanel,
   },
 };
 </script>
+
+<style scoped>
+.heading {
+  color: #ff57bc;
+}
+</style>

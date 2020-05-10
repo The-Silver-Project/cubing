@@ -3,7 +3,7 @@
     <div class="home-section"><app-bar /></div>
     <div class="home-section"><oll /></div>
     <div class="home-section"><pll /></div>
-    <div class="home-section"><timer /></div>
+    <div class="home-section timer-panel"><timer /></div>
     <div class="home-section"><scores /></div>
   </section>
 </template>
@@ -46,5 +46,10 @@ export default {
 }
 .home-section:last-child {
   border-right: 0;
+}
+
+.timer-panel {
+  background-color: #001f44;
+  position: relative;
 }
 </style>
