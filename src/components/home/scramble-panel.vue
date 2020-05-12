@@ -110,6 +110,10 @@ export default {
   border-left: 2px solid rgb(47, 116, 128);
   border-top: 2px solid rgb(47, 116, 128);
 }
+.left-arrow[disabled],
+.right-arrow[disabled] {
+  visibility: hidden;
+}
 .left-arrow {
   transform: rotate(-45deg);
 }
